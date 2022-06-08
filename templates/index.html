@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }} </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <h3>Send Echo Message</h3>
+        <input type="text" id="input">
+        <button id="send">Send</button>
+        <ul id="messages"></ul>
+        <br>
+        <h3>Broadcast Message</h3>
+        <ul id="broadcast"></ul>
+        <br>
+        <div id="footer" style="color: red;">
+            <dt id="errors">
+            </dt>
+        </div>
+    </body>
+    <!-- Has to be after the elements are creared to reference it -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </html>

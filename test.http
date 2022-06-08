@@ -1,0 +1,15 @@
+@host = http://localhost:5011
+
+###
+
+GET {{host}}/name
+
+###
+
+PUT {{host}}/name
+Content-Type: application/json
+
+{
+    "name": "werner",
+    "email": "werner@hot.com"
+}
